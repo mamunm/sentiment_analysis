@@ -29,6 +29,9 @@ var/
 *.manifest
 *.spec
 
+# raw csv data files
+*.csv
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
