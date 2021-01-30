@@ -5,9 +5,9 @@ import json
 from dotenv import load_dotenv, find_dotenv
 
 def fetch_tweets(q=None, 
-               lang=None,
-               maxResults=None,
-               f_name=None):
+                 lang=None,
+                 maxResults=None,
+                 f_name=None):
     
     dotenv_path = find_dotenv()
     load_dotenv(dotenv_path)
