@@ -20,10 +20,12 @@ def fetch_tweets(q=None,
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth, parser=JSONParser())
-    json_str = json.dumps(api.search(q=q, maxResults=maxResults, lang=lang))
-
+    json_str = json.dumps(api.search(q=q, 
+                                     maxResults=maxResults, 
+                                     lang=lang))
     if f_name:
         with open('../data/raw/' + f_name) as f:
             json.dump(json_str)
     else:
         return json_str
+    
