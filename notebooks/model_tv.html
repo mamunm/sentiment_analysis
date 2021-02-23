@@ -7,9 +7,23 @@
       <th>ROC AUC</th>
       <th>F1 Score</th>
       <th>Time Taken</th>
+      <th>Precision_0</th>
+      <th>Precision_1</th>
+      <th>Recall_0</th>
+      <th>Recall_1</th>
+      <th>F1_0</th>
+      <th>F1_1</th>
+      <th>ROC_AUC</th>
     </tr>
     <tr>
       <th>Model</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,60 +33,169 @@
   </thead>
   <tbody>
     <tr>
-      <th>LGBMClassifier</th>
-      <td>0.97</td>
-      <td>0.70</td>
-      <td>0.70</td>
-      <td>0.96</td>
-      <td>0.66</td>
+      <th>AdaBoostClassifier</th>
+      <td>0.98</td>
+      <td>0.89</td>
+      <td>0.89</td>
+      <td>0.98</td>
+      <td>3.31</td>
+      <td>0.99</td>
+      <td>0.80</td>
+      <td>0.99</td>
+      <td>0.80</td>
+      <td>0.99</td>
+      <td>0.80</td>
+      <td>0.89</td>
     </tr>
     <tr>
-      <th>XGBClassifier</th>
+      <th>PassiveAggressiveClassifier</th>
+      <td>0.92</td>
+      <td>0.77</td>
+      <td>0.77</td>
+      <td>0.93</td>
+      <td>0.85</td>
+      <td>0.98</td>
+      <td>0.38</td>
+      <td>0.94</td>
+      <td>0.60</td>
       <td>0.96</td>
-      <td>0.69</td>
-      <td>0.69</td>
-      <td>0.95</td>
-      <td>2.21</td>
+      <td>0.46</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <th>Perceptron</th>
+      <td>0.89</td>
+      <td>0.75</td>
+      <td>0.75</td>
+      <td>0.91</td>
+      <td>0.43</td>
+      <td>0.98</td>
+      <td>0.27</td>
+      <td>0.91</td>
+      <td>0.60</td>
+      <td>0.94</td>
+      <td>0.37</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <th>LinearDiscriminantAnalysis</th>
+      <td>0.49</td>
+      <td>0.73</td>
+      <td>0.73</td>
+      <td>0.61</td>
+      <td>1.32</td>
+      <td>1.00</td>
+      <td>0.10</td>
+      <td>0.46</td>
+      <td>1.00</td>
+      <td>0.63</td>
+      <td>0.18</td>
+      <td>0.73</td>
     </tr>
     <tr>
       <th>DecisionTreeClassifier</th>
       <td>0.96</td>
-      <td>0.60</td>
-      <td>0.60</td>
-      <td>0.94</td>
-      <td>0.60</td>
+      <td>0.69</td>
+      <td>0.69</td>
+      <td>0.95</td>
+      <td>0.53</td>
+      <td>0.97</td>
+      <td>0.67</td>
+      <td>0.99</td>
+      <td>0.40</td>
+      <td>0.98</td>
+      <td>0.50</td>
+      <td>0.69</td>
     </tr>
     <tr>
-      <th>AdaBoostClassifier</th>
+      <th>SGDClassifier</th>
+      <td>0.93</td>
+      <td>0.68</td>
+      <td>0.68</td>
+      <td>0.93</td>
+      <td>0.45</td>
+      <td>0.97</td>
+      <td>0.40</td>
+      <td>0.97</td>
+      <td>0.40</td>
+      <td>0.97</td>
+      <td>0.40</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <th>LinearSVC</th>
+      <td>0.92</td>
+      <td>0.68</td>
+      <td>0.68</td>
+      <td>0.93</td>
+      <td>7.70</td>
+      <td>0.97</td>
+      <td>0.33</td>
+      <td>0.95</td>
+      <td>0.40</td>
       <td>0.96</td>
-      <td>0.60</td>
-      <td>0.60</td>
-      <td>0.94</td>
-      <td>2.93</td>
+      <td>0.36</td>
+      <td>0.68</td>
     </tr>
     <tr>
-      <th>LinearDiscriminantAnalysis</th>
+      <th>LGBMClassifier</th>
       <td>0.95</td>
       <td>0.59</td>
       <td>0.59</td>
       <td>0.93</td>
-      <td>1.21</td>
+      <td>0.67</td>
+      <td>0.96</td>
+      <td>0.50</td>
+      <td>0.99</td>
+      <td>0.20</td>
+      <td>0.97</td>
+      <td>0.29</td>
+      <td>0.59</td>
     </tr>
     <tr>
-      <th>DummyClassifier</th>
+      <th>XGBClassifier</th>
+      <td>0.95</td>
+      <td>0.59</td>
+      <td>0.59</td>
+      <td>0.93</td>
+      <td>2.05</td>
+      <td>0.96</td>
+      <td>0.50</td>
+      <td>0.99</td>
+      <td>0.20</td>
+      <td>0.97</td>
+      <td>0.29</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <th>GaussianNB</th>
       <td>0.92</td>
       <td>0.58</td>
       <td>0.58</td>
       <td>0.92</td>
-      <td>0.39</td>
+      <td>0.45</td>
+      <td>0.95</td>
+      <td>0.25</td>
+      <td>0.97</td>
+      <td>0.20</td>
+      <td>0.96</td>
+      <td>0.22</td>
+      <td>0.58</td>
     </tr>
     <tr>
       <th>QuadraticDiscriminantAnalysis</th>
-      <td>0.10</td>
-      <td>0.52</td>
-      <td>0.52</td>
-      <td>0.09</td>
-      <td>0.96</td>
+      <td>0.13</td>
+      <td>0.54</td>
+      <td>0.54</td>
+      <td>0.15</td>
+      <td>0.94</td>
+      <td>1.00</td>
+      <td>0.06</td>
+      <td>0.08</td>
+      <td>1.00</td>
+      <td>0.15</td>
+      <td>0.11</td>
+      <td>0.54</td>
     </tr>
     <tr>
       <th>CalibratedClassifierCV</th>
@@ -80,15 +203,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>29.55</td>
-    </tr>
-    <tr>
-      <th>BernoulliNB</th>
+      <td>30.15</td>
       <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
       <td>0.50</td>
-      <td>0.50</td>
-      <td>0.92</td>
-      <td>0.43</td>
     </tr>
     <tr>
       <th>SVC</th>
@@ -96,7 +218,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>2.08</td>
+      <td>2.10</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>RidgeClassifierCV</th>
@@ -104,7 +233,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.48</td>
+      <td>0.49</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>RidgeClassifier</th>
@@ -112,7 +248,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.46</td>
+      <td>0.47</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>RandomForestClassifier</th>
@@ -120,15 +263,29 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.67</td>
+      <td>0.68</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
-      <th>NearestCentroid</th>
+      <th>BernoulliNB</th>
       <td>0.95</td>
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.40</td>
+      <td>0.46</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>CheckingClassifier</th>
@@ -136,7 +293,29 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.39</td>
+      <td>0.37</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <th>NearestCentroid</th>
+      <td>0.95</td>
+      <td>0.50</td>
+      <td>0.50</td>
+      <td>0.92</td>
+      <td>0.41</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>BaggingClassifier</th>
@@ -144,7 +323,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
+      <td>1.04</td>
       <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>LabelSpreading</th>
@@ -152,7 +338,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.40</td>
+      <td>0.44</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>LabelPropagation</th>
@@ -160,7 +353,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.40</td>
+      <td>0.47</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>KNeighborsClassifier</th>
@@ -168,15 +368,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>1.09</td>
-    </tr>
-    <tr>
-      <th>GaussianNB</th>
+      <td>1.12</td>
       <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
       <td>0.50</td>
-      <td>0.50</td>
-      <td>0.92</td>
-      <td>0.45</td>
     </tr>
     <tr>
       <th>ExtraTreesClassifier</th>
@@ -184,7 +383,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.92</td>
+      <td>0.90</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>LogisticRegression</th>
@@ -192,31 +398,14 @@
       <td>0.50</td>
       <td>0.50</td>
       <td>0.92</td>
-      <td>0.74</td>
-    </tr>
-    <tr>
-      <th>LinearSVC</th>
-      <td>0.93</td>
-      <td>0.49</td>
-      <td>0.49</td>
-      <td>0.91</td>
-      <td>7.52</td>
-    </tr>
-    <tr>
-      <th>PassiveAggressiveClassifier</th>
-      <td>0.93</td>
-      <td>0.49</td>
-      <td>0.49</td>
-      <td>0.91</td>
-      <td>0.88</td>
-    </tr>
-    <tr>
-      <th>SGDClassifier</th>
-      <td>0.93</td>
-      <td>0.49</td>
-      <td>0.49</td>
-      <td>0.91</td>
-      <td>0.44</td>
+      <td>0.72</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.50</td>
     </tr>
     <tr>
       <th>ExtraTreeClassifier</th>
@@ -224,15 +413,29 @@
       <td>0.49</td>
       <td>0.49</td>
       <td>0.91</td>
-      <td>0.40</td>
+      <td>0.41</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>0.99</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>0.00</td>
+      <td>0.49</td>
     </tr>
     <tr>
-      <th>Perceptron</th>
-      <td>0.92</td>
-      <td>0.49</td>
-      <td>0.49</td>
-      <td>0.91</td>
-      <td>0.43</td>
+      <th>DummyClassifier</th>
+      <td>0.90</td>
+      <td>0.48</td>
+      <td>0.48</td>
+      <td>0.90</td>
+      <td>0.39</td>
+      <td>0.94</td>
+      <td>0.00</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>0.95</td>
+      <td>0.00</td>
+      <td>0.48</td>
     </tr>
   </tbody>
 </table>
