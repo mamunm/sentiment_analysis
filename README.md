@@ -2,7 +2,7 @@
 
 # Tanishq Controversial Ad Sentiment Classification
 
-#### Second Capstone Project For Springboard using neural networks to generate images
+#### Second Capstone Project For Springboard 
 
 > A repo for sentiment analysis on Twitter data about the recent Tanishq controversial ad using Natural Language Processing
 
